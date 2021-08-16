@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EventoDBModelStoreContainer" CdmEntityContainer="EventoDBEntities">
+    <EntitySetMapping Name="TB_Evento">
+      <EntityTypeMapping TypeName="EventoDBModel.TB_Evento">
+        <MappingFragment StoreEntitySet="TB_Evento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="QtdPessoas" ColumnName="QtdPessoas" />
+          <ScalarProperty Name="QtdMaxPermitida" ColumnName="QtdMaxPermitida" />
+          <ScalarProperty Name="ValorPorPessoa" ColumnName="ValorPorPessoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
