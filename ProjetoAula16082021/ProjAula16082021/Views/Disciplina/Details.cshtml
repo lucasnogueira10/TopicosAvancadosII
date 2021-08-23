@@ -1,0 +1,42 @@
+﻿@model ProjAula16082021.Disciplina
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Disciplina</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdAlunos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdAlunos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeProfessor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeProfessor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
