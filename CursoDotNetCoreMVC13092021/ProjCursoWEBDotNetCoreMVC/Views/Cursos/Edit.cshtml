@@ -1,0 +1,48 @@
+﻿@model CursoWebCoreMVC.Models.Curso
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Curso</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="DataCadastro" class="control-label"></label>
+                <input asp-for="DataCadastro" class="form-control" />
+                <span asp-validation-for="DataCadastro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aluno" class="control-label"></label>
+                <select asp-for="Aluno" id="Aluno" name="Aluno" asp-items="@Model.Alunos" class="form-control">
+                    <option>@Model.Aluno.Nome</option>
+                </select>
+                <span asp-validation-for="Aluno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Disciplina" class="control-label"></label>
+                <select asp-for="Disciplina" id="Disciplina" name="Disciplina" asp-items="@Model.Disciplinas" class="form-control">
+                    <option>@Model.Disciplina.Descricao</option>
+                </select>
+                <span asp-validation-for="Disciplina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
