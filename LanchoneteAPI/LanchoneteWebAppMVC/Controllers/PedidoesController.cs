@@ -22,7 +22,7 @@ namespace LanchoneteWebAppMVC.Controllers
         // GET: Pedidoes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Pedido.ToListAsync());
+            return View(await _context.Pedido.Include(c => c.Cliente).Include(l => l.Lanche).ToListAsync());
         }
 
         // GET: Pedidoes/Details/5
@@ -46,7 +46,25 @@ namespace LanchoneteWebAppMVC.Controllers
         // GET: Pedidoes/Create
         public IActionResult Create()
         {
-            return View();
+            var p = new Pedido();
+
+            var cliente = _context.Cliente.ToList();
+
+            p.Clientes = new List<SelectListItem>();
+            foreach (var cli in cliente)
+            {
+                p.Clientes.Add(new SelectListItem { Text = cli.Nome, Value = cli.Id.ToString() });
+            }
+            //////
+            var lanche = _context.Lanche.ToList();
+
+            p.Lanches = new List<SelectListItem>();
+            foreach (var lan in lanche)
+            {
+                p.Lanches.Add(new SelectListItem { Text = lan.Nome, Value = lan.Id.ToString() });
+            }
+            //////
+            return View(p);
         }
 
         // POST: Pedidoes/Create
@@ -56,6 +74,17 @@ namespace LanchoneteWebAppMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id")] Pedido pedido)
         {
+            int _clienteId = int.Parse(Request.Form["Cliente"].ToString());
+            var cliente = _context.Cliente.FirstOrDefault(d => d.Id == _clienteId);
+            pedido.Cliente = cliente;
+
+            int _lancheId = int.Parse(Request.Form["Lanche"].ToString());
+            var lanche = _context.Lanche.FirstOrDefault(d => d.Id == _lancheId);
+            pedido.Lanche = lanche;
+
+
+
+
             if (ModelState.IsValid)
             {
                 _context.Add(pedido);
@@ -64,6 +93,7 @@ namespace LanchoneteWebAppMVC.Controllers
             }
             return View(pedido);
         }
+
 
         // GET: Pedidoes/Edit/5
         public async Task<IActionResult> Edit(int? id)

@@ -15,6 +15,30 @@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
+            @*<div class="form-group">
+            <label asp-for="Cliente" class="control-label"></label>
+            <input asp-for="Cliente" class="form-control" />
+            <span asp-validation-for="Cliente" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Lanche" class="control-label"></label>
+            <input asp-for="Lanche" class="form-control" />
+            <span asp-validation-for="Lanche" class="text-danger"></span>
+        </div>*@
+            <div class="form-group">
+                <label asp-for="Cliente" class="control-label"></label>
+                <select asp-for="Cliente" id="Cliente" name="Cliente" asp-items="@Model.Clientes" class="form-control">
+                    <option>Please select one</option>
+                </select>
+                <span asp-validation-for="Cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lanche" class="control-label"></label>
+                <select asp-for="Lanche" id="Lanche" name="Lanche" asp-items="@Model.Lanches" class="form-control">
+                    <option>Please select one</option>
+                </select>
+                <span asp-validation-for="Lanche" class="text-danger"></span>
+            </div>
         </form>
     </div>
 </div>
