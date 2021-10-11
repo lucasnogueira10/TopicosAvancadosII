@@ -7153,11 +7153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteWebAppMVC\\LanchoneteWebAppMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteWebAppMVC\\LanchoneteWebAppMVC.csproj",
       "projectName": "LanchoneteWebAppMVC",
-      "projectPath": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteWebAppMVC\\LanchoneteWebAppMVC.csproj",
+      "projectPath": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteWebAppMVC\\LanchoneteWebAppMVC.csproj",
       "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteWebAppMVC\\obj\\",
+      "outputPath": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteWebAppMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",

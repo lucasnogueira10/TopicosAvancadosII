@@ -7335,11 +7335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteAPI\\LanchoneteAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteAPI\\LanchoneteAPI.csproj",
       "projectName": "LanchoneteAPI",
-      "projectPath": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteAPI\\LanchoneteAPI.csproj",
+      "projectPath": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteAPI\\LanchoneteAPI.csproj",
       "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteAPI\\obj\\",
+      "outputPath": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",

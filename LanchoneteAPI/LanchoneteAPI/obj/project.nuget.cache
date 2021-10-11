@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0RAWdtUS/dT2VYwq4RG2H1xaJUa5Yj19dP9vF/kKctNT991nXJhuzSUY4L7fS5++2bjuM/O/3UfVYjcgzjyeVw==",
+  "dgSpecHash": "aOrbB2h+YL259aXg/VZjaFCPQzpUOEZvrJy1aFUo0muLDm8o2t/D1mu+9PgrzrM4CQ3T1ilHlIO7CFa8Wd35uA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucas\\source\\repos\\LanchoneteAPI\\LanchoneteAPI\\LanchoneteAPI.csproj",
+  "projectFilePath": "C:\\Users\\Lucas\\Desktop\\TopicosAvancadosII\\LanchoneteAPI\\LanchoneteAPI\\LanchoneteAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
