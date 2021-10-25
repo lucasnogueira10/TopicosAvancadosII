@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaWebApp", "BibliotecaWebApp\BibliotecaWebApp.csproj", "{CAD7F3B1-6D4B-49F4-B102-16319EAA31FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAD7F3B1-6D4B-49F4-B102-16319EAA31FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD7F3B1-6D4B-49F4-B102-16319EAA31FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD7F3B1-6D4B-49F4-B102-16319EAA31FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD7F3B1-6D4B-49F4-B102-16319EAA31FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CB57C03-BFB3-451C-AB43-6487D3AB3775}
+	EndGlobalSection
+EndGlobal
